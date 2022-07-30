@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title class="title">COOKIE CLICKER :)</title>
+    <link rel="shortcut icon" type="image/png" href="C:\Users\Lenovo\Documents\level 8\images/coook faveicon.png">
+    <link rel="stylesheet" type="text/css" href="CSS/cookie.css">
+
+
+</head>
+<body style="text-align: center;">
+    <h1 class="header" >cookie clicker :)</h1>
+    <div class ="container">
+        <button id="btn" > <img src="images/cookei.png" height ="500" width="500"  /></button>
+    </div>
+    <h4>
+        Click For Cookies 
+    </h4>
+    <p class="st">
+        COOKIES CLICKED <span 
+        id="display">0</span> Times
+    </p>
+    <button id="gain">Click For Double Cookies*</button>
+    <footer class="footer">*you are going to lose 20 cookies be aware</footer>
+
+<script type="text/javascript">
+    var count = 0;
+    let target = 0;
+    var multiplebytwo = 2;
+    var btn = document.getElementById("btn");
+    var disp = document.getElementById("display");
+    var gain = document.getElementById("gain")
+    btn.onclick = function () {
+    
+        if(count<100){
+        count++;
+        disp.innerHTML = count;}
+
+        else if(count=100){
+            alert("you have reached 100")
+            count =0;
+        }
+
+    }
+    count = target;
+    document.getElementById('gain').addEventListener ('click',()=>{
+        count-=22;
+        btn.onclick = function () {
+            if(count<100){
+            count++;
+            count += 1  ;
+            disp.innerHTML = count;}
+
+
+            else if(count=100){
+            alert("you have reached 100");
+            count =0;
+            }
+
+
+
+
+
+    }})
+    
+        
+        
+
+        
+</script>
+
+
+
+
+</body>
+<html>
