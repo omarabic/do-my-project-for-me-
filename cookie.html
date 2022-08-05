@@ -8,6 +8,103 @@
 
 </head>
 <body style="text-align: center;">
+    <style>
+        *{
+  max-width: auto;
+  margin: auto;
+  background-color:rgb(254, 255, 205);
+  box-sizing: border-box;
+  font-size: 20px;
+  color:rgb(173, 84, 24);
+  padding: 5px;
+  border-width: 0cm;
+}
+
+
+#btn{
+  padding: 0px;
+}
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(131, 68, 17);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(133, 69, 26, 0.623);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(173, 84, 24);
+
+}
+
+
+#gain{
+  border: 2px solid rgb(214, 110, 50);
+  border-radius: 25px;
+  padding: 5px;
+  width: auto;
+  height: auto;
+
+}
+
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    padding: 15px;
+    font-size: 25px;
+  }
+  
+
+  
+  .footer {
+
+    font-size: 10px;
+    padding: 50px;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+    </style>
     <h1 class="header" >cookie clicker :)</h1>
     <div class ="container">
         <button id="btn" > <img src="images/cookei.png" height ="500" width="500"  /></button>
