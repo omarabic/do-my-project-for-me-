@@ -1,0 +1,861 @@
+*{
+  font-family: sans-serif; /* the best font to ever exist  */
+}
+
+
+:root{
+  --font-family:Helvatica;
+}
+
+.zedd{
+  text-align: center;
+  top: 0%;
+
+}
+
+.nav{
+  overflow:hidden;
+  background-color: black;
+  border: none;
+  border-radius: 25px;
+  
+}
+.openbtn {
+  background-color: rgb(0, 0, 0); /* Blue background */
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px ; /* Some padding */
+  font-size: 37px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  width:auto;
+  position: absolute;
+  top:8%;
+  border-radius: 25px;
+}
+
+
+.cart{
+  font-size: 37px;
+  border: none;
+  color:white;
+  background-color: black;
+  top:9%;
+  width:auto;
+  border-radius: 25px;
+  position:absolute;
+  right: 25px;
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+
+.cart:hover{
+  opacity: 60%;
+}
+
+.search{
+  text-align: center ;
+  width: 80%;;
+  padding: 10px;
+  height:10px;
+  
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+h2{
+  text-align: center;
+}
+
+.searchinput[type=text] {
+  text-align: center;
+  color: rgb(32, 32, 32);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 15px;
+    text-align: center;
+    font-family:Helvetica;
+    border-radius: 25px;
+    float:left;
+  }
+  
+  .image{
+    border-radius: 25px;
+  }
+
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    height: fit-content;
+    font-size: 18px;
+    float:left;
+
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+  
+ 
+
+
+  ::-webkit-scrollbar {
+    width: 15px;}
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(141, 141, 141);
+    border-radius: 10px;}
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(0, 0, 0);}
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.863);}
+
+
+  .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgb(10, 10, 10);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      border:none;
+      border-radius: 25px;
+      background-color: #000000c2; 
+      
+    }
+    
+  .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #ffffffd2;
+      display: block;
+      transition: 0.3s;
+    }
+    
+  .sidebar a:visited{
+      color: #ffffff;
+    }
+
+  .sidebar a:hover {
+      color: #575757ce;
+      cursor: pointer;
+
+    }
+    
+  .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: #ffffff;
+    }
+    
+   .openbtn:hover {
+      background-color: #444;
+  }
+    
+.sidebar{
+  font-family:Helvetica;
+}
+
+/* unvisited link */
+a:link{
+  color: #ffffffd2;
+  text-decoration: none;}
+
+/* visited link */
+a:visited {
+  color: #ffffff;
+  text-decoration: none;}
+
+/* mouse over link */
+a:hover {
+  color: rgba(36, 36, 36, 0.808);
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #575757ce;
+  text-decoration: none;}
+
+/* Full-width input fields */
+input[type=text] , input[type=password]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 25px;
+
+}
+
+
+
+/* Set a style for all buttons */
+.container button {
+  background-color: #000000;
+  color: white;
+  padding: 14px ;
+  margin: 8px  ;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 8px 0;
+  flex: auto;
+  flex-wrap: wrap;
+
+}
+
+
+
+
+.container button:hover {
+  opacity: 0.8;
+}
+
+
+#log{
+  border-radius: 25px;
+  float: left;
+}
+
+
+ 
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+
+.container:not(span.psw) {
+  border-radius: 25px;
+  background-color: white;
+  padding: 16px;
+}
+
+.container2  {
+  padding: 16px;
+  background-color: white;
+  overflow: auto;
+  height:fit-content;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+}
+
+.container2 button{
+   background-color: #000000;
+  color: white;
+  padding: 14px ;
+  margin: 8px  ;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 8px 0;
+  flex: auto;
+  flex-wrap: wrap;
+
+}
+   
+span.psw {
+  float: right;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+ /* padding-top: 16px;
+ padding-bottom: 16px;
+ */
+
+}
+
+.check{
+  float: left;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px ;
+
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position:fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:none; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 1px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  border-radius: 25px;
+  width: 35%;
+  font-size: 15px;
+  font-family: Helvetica;
+  margin-top: 130px;
+}
+
+/* The Close Button (x) */
+.close {
+  position:absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+  color: rgba(0, 0, 0, 0.815);
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 400px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+
+.terms{
+  float: left;
+  font-size: 10px;
+  
+}
+
+/* The Modal (background) */
+.modal2 {
+  display: none; /* Hidden by default */
+  position:fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 1px;
+  
+
+}
+
+/* Modal Content/Box */
+.modal2-content {
+  text-align: center;
+  background-color: #fefefe;
+  margin: 1.7% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+  border-radius: 25px;
+  width: 35%;
+  font-size: 15px;
+  font-family: Helvetica;
+}
+
+.cancelbtn,.signup{
+  border-radius: 25px ;
+  width: 100%;
+}
+
+.rem{
+  float: left;
+  margin-right: 4px ;
+  padding: 5px;
+}
+
+.container  {
+  padding: 16px;
+  background-color: white;
+  overflow: auto;
+  height:fit-content;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+}
+
+.container button{
+   background-color: #000000;
+  color: white;
+  padding: 14px ;
+  margin: 8px  ;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin: 8px 0;
+  flex: auto;
+  flex-wrap: wrap;
+
+}
+
+.signhead {
+  position: relative;
+}
+
+
+.close2 {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close2:hover,
+.close2:focus {
+  color: rgba(0, 0, 0, 0.815);
+  cursor: pointer;
+}
+
+
+
+.container3 button {
+  background-color: #000000;
+  color: white;
+  padding: 14px ;
+  margin: 8px  ;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px ;
+  margin: 8px 0;
+  flex: auto;
+  flex-wrap: wrap;
+  width:30%;
+}
+
+
+
+/* The Modal (background) */
+.modal3 {
+  display: none; /* Hidden by default */
+  position:fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 1px;
+}
+
+/* Modal Content/Box */
+.modal3-content {
+  background-color: #fefefe;
+  margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  border-radius: 25px;
+  width: 60%;
+  min-width: 23.3%;
+  font-size: 15px;
+  font-family: Helvetica;
+  margin-top: 7%;
+}
+
+/* The Close Button (x) */
+.close {
+  position:absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+.close:hover,
+.close:focus {
+  color: rgba(0, 0, 0, 0.815);
+  cursor: pointer;
+}
+
+.add,.view,.saleview{
+  border-radius: 25px;
+  margin:5px;
+}
+
+.close3 {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close3:hover,
+.close3:focus {
+  color: rgba(0, 0, 0, 0.815);
+  cursor: pointer;
+}
+
+.imgcontainer3 {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+ }
+ 
+ 
+ 
+ .edit{
+  border-radius: 25px;
+ }
+
+.avatar{
+  width: 170px;
+  height:170px;
+  border-radius: 50px;
+}
+
+.container3 > .card{
+ text-align: center;
+}
+
+.edit1 {
+  display: none; /* Hidden by default */
+  position:fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /*overflow:auto;  Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 1px;
+}
+
+/* Modal Content/Box */
+.editcontent {
+  background-color: #fefefe;
+  margin: 2% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  border-radius: 25px;
+  width: fit-content;
+  min-width: 23.3%;
+  font-size: 15px;
+  font-family: Helvetica;
+
+}
+
+.editcontent button {
+  background-color: #000000;
+  color: white;
+  padding: 14px ;
+  margin: 8px  ;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px ;
+  margin: 8px 0;
+  flex: auto;
+  flex-wrap: wrap;
+  width:30%;
+  border-radius: 25px;
+}
+
+
+.containerprofile input[type=text]{
+  width:90%;
+  margin: 10px;
+  padding: 20px;
+  display:block;
+  text-align: center;
+}
+.edit,.view,.add{
+  flex: auto;
+  flex-wrap: wrap;
+}
+
+.editprofile:not(.editclose){
+  margin: 30px;
+}
+
+
+.imgbtn{
+  margin: 25px;
+}
+
+.enterpfp{
+  margin: 25px;
+  color: #000000;
+}
+
+.add1{
+  display: none; /* Hidden by default */
+  position:fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /*overflow:auto;  Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 1px;
+
+}
+
+
+.container-add{
+  background-color: #fefefe;
+  margin: 2% auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
+  border-radius: 25px;
+  width: fit-content;
+  min-width: 23.3%;
+  font-size: 15px;
+  font-family: Helvetica;
+
+}
+
+
+
+
+.view-listing1{
+  display: none; /* Hidden by default */
+  position:fixed; /* Stay in place */
+  z-index: 6; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.container-view{
+  background-color: #fefefe;
+  margin: 2% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 0px solid #888;
+  border-radius: 25px;
+  width: 100%;
+
+  font-size: 15px;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+
+.container-view button:not(.card) {
+  background-color: #000000;
+  color: white;
+
+
+  border: none;
+  cursor: pointer;
+
+  margin: 8px ;
+  flex: auto;
+  flex-wrap: wrap;
+  width:95%;
+  border-radius: 25px;
+}
+
+.cancelbtn-view:hover{
+  opacity: 60%;
+}
+
+.view-head{
+  margin: 5px;
+}
+
+.container-view > .card button{
+  border: none;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+  width: 95%;
+  height: fit-content;
+  font-size: 18px;
+  float:left;}
+
+
+
+.modal5{
+  display: none; /* Hidden by default */
+  position:fixed; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow:auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 1px;
+}
+
+
+
+
+
+
+
+.cart-head{
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+
+.cart-footer button {
+  background-color: #000000;
+  color: white;
+  padding: 14px ;
+  margin: 8px 8px ;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px ;
+  margin: 8px 0;
+  flex: auto;
+  flex-wrap: wrap;
+  width:30%;
+  border-radius: 25px;
+}
+
+.cart-footer button:hover {
+  opacity:80%;
+}
+
+.cart-card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.445);
+  max-width: 300px;
+  margin: 20px;
+  border-radius: 25px;
+}
+
+.cart-card img{
+  border-radius:25px;
+}
+
+.cart-card button{
+  margin:10px;
+  background-color: #000; 
+  color: #ffffff;
+  padding:10px;
+  border-radius: 25px;
+  width:90%;
+  cursor: pointer;
+}
+
+.cart-card button:hover{
+  opacity: 80%;
+}
+
+footer {
+  position:relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  height: auto;
+  width:100%;
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+.footer-content:not(button){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+footer button{
+  display: flex;
+  flex-wrap: nowrap;
+  border:none;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  margin:5px;
+  cursor: pointer;
+  float: left;
+
+}
+
+footer button:hover{
+  opacity: 80%;
+}
