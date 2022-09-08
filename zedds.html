@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<head>
+    <title>ZEDD</title>
+    <link rel="stylesheet" type="text/css" href="CSS/zedd.css">
+    <link rel="shortcut icon" type="image/png" href="C:\Users\Lenovo\Documents\level 8\images\butterfly fly away.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <!--navigation-->
+  <div class="nav">
+    <div><h1 class="zedd"><img src="images/zedd.png" height="99" width=auto /></h1></div>
+      <div><button class="cart" onclick="document.getElementById('cart-modal').style.display='block'"><i class="fa fa-shopping-cart"></i></button></div>
+      <div><button class="openbtn" onclick="openNav()" ><i class="fa fa-bars"></i></button></div>
+    <h2><input class="search" type="text" style="text-align: center;"placeholder="Search..."></h2>
+  </div>
+
+  <!--sidebar-->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="http://127.0.0.1:5500/terms%20and%20privacy.html" >Terms and privacy</a>
+    <a onclick="document.getElementById('id03').style.display='block'">My Profile</a>
+    <a href="http://127.0.0.1:5500/delivery.html">Delivery </a>
+    <!--<a href="#">Sales</a>-->
+    <a onclick="document.getElementById('id02').style.display='block'">Sign Up</a>  
+    <a onclick="document.getElementById('id01').style.display='block'">Log In</a>
+
+  </div>
+  
+  <div id="#main">
+      <div class="card">
+        <img class="image" src="images/Aesthetic Outfits for Early 2022 ✨🤎✨.jpeg" alt="Denim Jeans" style="width:100%">
+        <h1>2022 outfit set</h1>
+        <p class="price">$90.99</p>
+        <p>a beige out fit containing essintials and acc, more info in my instgrampage @username.</p>
+        <p><button onclick="document.getElementById('cart-modal').style.display='block'">Add to Cart</button></p>
+
+
+      </div>
+
+      <div class="card">
+        <img class="image" src="images/Pull&Bear straight leg jeans in blue.jpeg" alt="Denim Jeans" style="width:100%">
+        <h1>Tailored Jeans</h1>
+        <p class="price">$19.99</p>
+        <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img class="image" src="images/Join the ・fendi pfps Discord Server! _ Swag shoes, Jordan shoes retro, Hype shoes.jpeg" alt="Denim Jeans" style="width:100%">
+          <h1>fendi sneakers</h1>
+            <p class="price">$900.99</p>
+          <p>fendi sneakers in blur.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+
+
+      <div class="card">
+        <img class="image" src="images/some.jpeg" alt="Denim Jeans" style="width:100%">
+        <h1>brown outfit set</h1>
+        <p class="price">$199.99</p>
+        <p>a brown out fit containing essintials and acc, more info in my instgrampage @username.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+
+      <div class="card">
+        <img class="image" src="images/brown.jpeg" alt="Denim Jeans" style="width:100%">
+        <h1 class="title">brown outfit set</h1>
+        <p class="price">$103.99</p>
+        <p class="discreption">a brown out fit containing essintials and acc, more info in my instgrampage @username.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+
+
+
+        <div class="card">
+          <img class="image" src="images/pfp.png" style="width:100%">
+          <h1>NFT</h1>
+          <p class="price">$10.99</p>
+          <p>very portable it can't even move.</p>
+          <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+
+  <!--log in modal-->
+  <div id="id01" class="modal" style="text-align: center; ">
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <h1>ZEDD LOG IN </h1>
+      </div>
+    
+      <div class="container">
+        <label id="#user" for="uname1"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname1" required>
+    
+        <label id="#pass" for="psw1"><b>Password</b></label>
+          <input type="password" class="pass1" placeholder="Enter Password" name="psw" required>
+
+        <button id="#log" type="submit" style="width:100%;border-radius:25px; ">Login</button>
+      </div>
+    </form>
+  </div>
+    
+
+  <!--cart modal-->
+  <div id="cart-modal" class="modal5" style="text-align: center; ">
+    <form class="modal3-content animate" >
+      <div class="cart-head">
+        <span onclick="document.getElementById('cart-modal').style.display='none'" class="close3" title="Close Modal">&times;</span>      
+        <h1>Cart</h1>
+      </div>
+    
+      <div class="cart-container">
+        <div class="cart-card">
+          <img class="cart-image" src="images/Aesthetic Outfits for Early 2022 ✨🤎✨.jpeg" alt="Denim Jeans" style="width:100% ; height:10%">
+          <h1>2022 outfit set</h1>
+        <p class="price">$90.99</p>
+        <p>a beige out fit containing essintials and acc, more info in my instgrampage @username.</p>
+        <p><button onclick="document.querySelector('cart-container').style.display='none'">Remove from cart</button></p>
+        </div>
+      </div>
+
+
+      <div class="cart-footer">
+          <button type="button" class="add"  onclick="document.getElementById('cart-modal').style.display='none'"><i class="fa fa-plus" style="color: white ;"></i> Continue shopping.</button>
+          <button type="button" id="Check-out" >Check out</button>
+      </div>
+
+    </form>
+  </div>
+
+  <!--sign up forum/modal-->
+  <div id="id02" class="modal2" style="text-align: center; ">
+    <form class="modal2-content animate"  action="/user" method="post">
+
+      <div class="signhead">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span> 
+          <h1>ZEDD Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+      </div>
+
+      <div class="container2">
+        <label  for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+      
+        <label for="email"><b>Email</b></label>      
+        <input type="text" placeholder="Enter Email" id="email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+
+        
+        
+
+
+          <div class="clearfix">
+
+            <button type="submit" class="signup">Sign Up</button>
+              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+            <p class="terms">By creating an account you agree to our <a href="http://127.0.0.1:5500/terms%20and%20privacy.html" target="_blank" style="color:rgb(30, 7, 83)">Terms & Privacy</a>.</p>
+
+          </div>
+     
+        </div>
+    </form>
+  </div>
+       
+  <!--personal profile-->
+  <div id="id03" class="modal3" style="text-align: center; ">
+  
+    <form class="modal3-content animate" action="/action_page.php" >
+      <div class="imgcontainer3">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close3" title="Close Modal">&times;</span>      
+          <h1>PERSONAL PROFILE</h1>
+            <img src="images/pfp2.jpeg" alt="Avatar" class="avatar">
+              <p id="username">this is the user name</p>
+            <p id="bio">this is a bio</p>
+          <p id="place">this is your place so people could dox you</p>
+      </div>
+
+      <div class="container3">
+        <button type="button" class="view" onclick="document.getElementById('view-listing').style.display='block'" >View listings</button>
+          <button type="button" class="add"  onclick="document.getElementById('add1').style.display='block'"><i class="fa fa-plus" style="color: white ;"></i> Add a listing</button>
+        <button type="button" class="edit" onclick="document.getElementById('edit').style.display='block'">Edit profile</button>
+      </div>
+    </form>
+  </div>
+
+
+  <!--edit profile modal-->
+  <div id="edit" class="edit1" style="text-align: center; ">
+    <form class="editcontent animate" action="/action_page.php" >
+
+      <div class="editprofile">
+        <h1>Edit your public profile</h1>
+      </div>
+
+      <div class="containerprofile">
+        <br><label id="pfp" for="uname"><b>Change profile picture</b></label></br>
+
+        <input class="enterpfp" type="file" id="imgbtn" name="img-PFP" accept="image/*" style="text-align: center;">
+
+        <br><label id="#user" for="uname"><b>Change Username</b></label></br>
+        <input type="text" placeholder="Change Username" name="uname" required>
+      
+        <label for="disc"><b>Change discrepton</b></label>      
+        <input type="text" placeholder="Change discreption" name="discreption" required>
+
+        <label for="place"><b>Change place</b></label>      
+        <input type="text" placeholder="Change place" name="placee" required>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('edit').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="confirm">Confirm</button>
+      </div>
+
+      </div>
+
+    </form>
+  </div>
+
+
+  <!--add a listing modal-->
+  <div id="add1" class="add1" style="text-align: center; ">
+    <form class="editcontent animate" action="/action_page.php" >
+
+      <div class="addlist">
+        <h1>Add A Listing</h1>
+      </div>
+
+      <div class="container-add">
+        <br><label id="pfp" for="uname"><b>Choose Product Picture</b></label></br>
+        <input class="enterpfp" type="file" id="imgbtn" name="img" accept="image/*" style="text-align: center;">
+
+        <br><label id="#user" for="uname"><b>Choose Product Name</b></label></br>
+        <input type="text" placeholder="Change Product Name" name="uname" required>
+      
+        <label for="disc"><b>Choose Discrepton</b></label>      
+        <input type="text" placeholder="Choose discreption" name="discreption" required>
+
+        <label for="place"><b>Choose Price</b></label>      
+        <input type="text" placeholder="Change Price" name="placee" required>
+
+        <div class="add-fix">
+          <button type="button" onclick="document.getElementById('add1').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" class="confirm">Add</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+
+  <!--view listings modal-->
+  <div id="view-listing" class="view-listing1" >
+    <form class="editcontent animate" action="/action_page.php" >
+
+      <div class="view-head">
+        <h1>view all of your listings</h1>
+      </div>
+
+      <div class="container-view">
+        <div class="card">
+          <img class="image" src="images/some.jpeg" alt="Denim Jeans" style="width:100%">
+            <h1>brown outfit set</h1>
+              <p class="price">$199.99</p>
+            <p>a brown out fit containing essintials and acc, more info in my instgrampage @username.</p>
+          <button>Un-list</button>
+        </div>
+
+        <div class="card">
+          <img class="image" src="images/some.jpeg" alt="Denim Jeans" style="width:100%">
+            <h1>brown outfit set</h1>
+              <p class="price">$199.99</p>
+            <p>a brown out fit containing essintials and acc, more info in my instgrampage @username.</p>
+          <button>Un-list</button>
+        </div>
+      </div>   
+
+      <div class="view-fix" style="text-align:center;">
+        <button type="button" onclick="document.getElementById('view-listing').style.display='none'" style="width:90%;text-align:center;" class="cancelbtn-view">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+
+
+  <!--footer-->
+  <footer class="footer-content ">
+    <P>For Feedback contact us on: <a class="mail" href="mailto:zeddcustomerservice@gmail.com">zeddcustomerservice@gmail.com </a></p>
+      <div class="buttons" style="float:left">
+        <button  onclick="topFunction()" id="scrollback " title="Go to top"> <span class="go-back animate">Go to the top</span></button>
+          <button><a  href="http://127.0.0.1:5500/delivery.html">Delivery</a></button>
+        <button><a href="http://127.0.0.1:5500/terms%20and%20privacy.html">Terms and Privacy</a></button>
+      </div>
+    <P style="font-size:9px ;">© Copyright 2022</P>
+  </footer>
+
+<script src="js/zedd.js">
+
+</script>
+      
+</body>

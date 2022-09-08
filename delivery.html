@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>Delivery</title>
+    <link rel="stylesheet" type="text/css" href="CSS/delivery.css">
+    <link rel="shortcut icon" type="image/png" href="C:\Users\Lenovo\Documents\level 8\images\butterfly fly away.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="header">
+        <h1>Delivery System</h1>
+        <p>a more easier way to dliver</p>
+    </div>
+     
+    
+    <p>The ZEDD delivery system is an in app feture that offers sellers to easely deliver there proudcts.</p>
+    <h2>The Process</h2>
+
+    <ul>
+        <li>After checking out the seller will choose the shipper to deliver the product.</li>
+        <li>The shipper will be contacted by the seller to send information to them.</li>
+        <li>The seller will contact you to confirm everything.</li>
+        <li>The shipper will deliver the items.</li>
+    </ul>
+
+    <p id="note">*Note: If you order multiple items from different sellers every item from every seller will be dillevered seperatly.</p>
+
+    <div id="id02" class="modal2" style="text-align: center; ">
+        <form class="modal2-content animate" action="/action_page.php">
+      
+          <div class="signhead">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span> 
+            <h1>ZEDD shipper Sign Up</h1>
+            <p>Please fill in this form to become a shipper.</p>
+            </div>
+            <div class="container2">
+            <label id="#user" for="uname"><b>name</b></label>
+            <input type="text" placeholder="Enter name" name="name" required>
+            
+            <label for="email"><b>Email</b></label>      
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+            <label for="palce"><b>Place</b></label>
+            <input type="text" placeholder="Enter Place" name="palce" required>
+      
+            <label for="hours"><b>hours</b></label>
+            <input type="text" placeholder="Enter hours" name="hours" required>
+      
+            <label for="car"><b>car model</b></label>
+            <input type="text" placeholder="Enter car model" name="car" required>
+            
+      
+      
+            <div class="clearfix">
+      
+              <button type="submit" class="signup">Sign Up</button>
+              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      
+            </div>
+           
+          </div>
+        </form>
+    </div>
+
+
+      <div id="id03" class="modal3" style="text-align: center; ">
+        <form class="modal3-content animate" action="/action_page.php">
+      
+          <div class="signhead">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close2" title="Close Modal">&times;</span> 
+              <h1>Find Shippers</h1>
+            </div>
+
+            <div class="container3" >
+                <div class="imgcontainer3">
+
+                  <div class="info">
+                    <p>Name</p>
+                      <p>Email</p>
+                        <p>Number</p>
+                          <p>Place</p>
+                      <p>Hours</p>
+                    <p>Car Model</p>
+                    <!--<button class="choose">choose shipper</button>-->
+
+                  </div>
+                </div>
+                
+          </div>
+      
+      
+            <div class="clearfix">
+      
+              <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn3">Cancel</button>
+      
+            </div>
+       
+        </form>
+      </div>
+    <footer>
+        <div class="botom-buttons">
+            <button id="sign-up" type="button" onclick="document.getElementById('id02').style.display='block'">Sign Up to become a shipper</button>
+            <button id='find' type="button" onclick="document.getElementById('id03').style.display='block'">Find shippers near you</button> 
+            <button id="home"><a href="http://127.0.0.1:5500/zedds.html">Go Home</a></button>
+
+        </div>
+    </footer>
+    <script src="js/del.js"></script>
+</body>
