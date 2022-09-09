@@ -101,7 +101,7 @@
         <label id="#pass" for="psw1"><b>Password</b></label>
           <input type="password" class="pass1" placeholder="Enter Password" name="psw" required>
 
-        <button id="#log" type="submit" style="width:100%;border-radius:25px; ">Login</button>
+        <button id="#log" type="submit" style="width:100%;border-radius:25px; " onclick="document.getElementById('id01').style.display='none'">Login</button>
       </div>
     </form>
   </div>
@@ -128,7 +128,7 @@
 
       <div class="cart-footer">
           <button type="button" class="add"  onclick="document.getElementById('cart-modal').style.display='none'"><i class="fa fa-plus" style="color: white ;"></i> Continue shopping.</button>
-          <button type="button" id="Check-out" >Check out</button>
+          <button type="button" id="Check-out" onclick="document.getElementById('cart-modal').style.display='none'">Check out</button>
       </div>
 
     </form>
@@ -216,7 +216,7 @@
 
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('edit').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="confirm">Confirm</button>
+        <button type="submit" class="confirm"  onclick="document.getElementById('edit').style.display='none'">Confirm</button>
       </div>
 
       </div>
@@ -248,7 +248,7 @@
 
         <div class="add-fix">
           <button type="button" onclick="document.getElementById('add1').style.display='none'" class="cancelbtn">Cancel</button>
-          <button type="submit" class="confirm">Add</button>
+          <button type="submit" onclick="document.getElementById('add1').style.display='none'" class="confirm">Add</button>
         </div>
       </div>
 
@@ -266,11 +266,11 @@
 
       <div class="container-view">
         <div class="card">
-          <img class="image" src="images/some.jpeg" alt="Denim Jeans" style="width:100%">
+          <img class="image" src="brown.jpeg" alt="Denim Jeans" style="width:100%">
             <h1>brown outfit set</h1>
               <p class="price">$199.99</p>
             <p>a brown out fit containing essintials and acc, more info in my instgrampage @username.</p>
-          <button>Un-list</button>
+          <button type="button" onclick="document.getElementById('view-listing').style.display='none'">Un-list</button>
         </div>
 
         <div class="card">
@@ -278,7 +278,7 @@
             <h1>brown outfit set</h1>
               <p class="price">$199.99</p>
             <p>a brown out fit containing essintials and acc, more info in my instgrampage @username.</p>
-          <button>Un-list</button>
+          <button type="button" onclick="document.getElementById('view-listing').style.display='none'">Un-list</button>
         </div>
       </div>   
 
